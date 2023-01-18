@@ -1,0 +1,31 @@
+[package]
+name = "cardinal-token-manager"
+version = "1.4.6"
+description = "Cardinal token manager"
+edition = "2021"
+homepage = "https://cardinal.so"
+repository = "https://github.com/cardinal-labs/cardinal-token-manager/tree/main/programs/cardinal-token-manager"
+authors = ["Jeremy Bogle <jeremy@cardinal.so>"]
+license = "AGPL-3.0"
+keywords = ["solana", "cardinal"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "cardinal_token_manager"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.24.2", features = ["init-if-needed"] }
+anchor-spl = "0.24.2"
+solana-program = "1.9.28"
+spl-associated-token-account = "1.0.3"
+spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
+mpl-token-metadata = { version = "1.2.5", features = ["no-entrypoint"] }
+
+[dev-dependencies]
+proptest = { version = "1.0" }

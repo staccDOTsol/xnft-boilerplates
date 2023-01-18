@@ -1,0 +1,127 @@
+org: jpbogle
+app: cardinal
+service: cardinal-namespaces
+frameworkVersion: "2 || 3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: "20201221"
+  http:
+    cors: true
+
+package:
+  individually: true
+  exclude:
+    - "./node_modules"
+    - "./yarn.lock"
+
+functions:
+  twitter-approver:
+    handler: twitter-approver/handler.approve
+    timeout: 30
+    environment:
+      TWITTER_SOLANA_KEY: ${ssm:/TWITTER_SOLANA_KEY~true}
+    events:
+      - http:
+          path: /approve
+          method: get
+  twitter-revoker:
+    handler: twitter-revoker/handler.revoke
+    timeout: 30
+    environment:
+      TWITTER_SOLANA_KEY: ${ssm:/TWITTER_SOLANA_KEY~true}
+    events:
+      - http:
+          path: /revoke
+          method: get
+  twitter-proxy:
+    handler: twitter-proxy/handler.proxy
+    events:
+      - http:
+          path: /proxy
+          method: get
+          caching:
+            enabled: true
+            ttlInSeconds: 3600 # overrides the global setting for ttlInSeconds
+            perKeyInvalidation:
+              requireAuthorization: false # default is true
+            cacheKeyParameters:
+              - name: request.path.url
+              - name: request.path.usernames
+  passbase-webhook:
+    handler: passbase-webhook/handler.webhook
+    events:
+      - http:
+          path: /passbase/webhook
+          method: post
+    environment:
+      PASSBASE_WEBHOOK_SECRET: ${ssm:/PASSBASE_WEBHOOK_SECRET~true}
+      PASSBASE_SECRET_KEY: ${ssm:/PASSBASE_SECRET_KEY~true}
+      KYC_SECRET_KEY: ${ssm:/KYC_SECRET_KEY~true}
+      SES_ACCESS_KEY_ID: ${ssm:/SES_ACCESS_KEY_ID~true}
+      SES_SECRET_ACCESS_KEY: ${ssm:/SES_SECRET_ACCESS_KEY~true}
+  passbase-data:
+    handler: passbase-data/handler.data
+    events:
+      - http:
+          path: /passbase/data
+          method: get
+  typeform-approver:
+    handler: typeform-approver/handler.approve
+    timeout: 60
+    events:
+      - http:
+          path: /typeform/approve
+          method: post
+          cors: true
+    environment:
+      CLUSTER: ${ssm:/CLUSTER~true}
+      EMPIREDAO_SCAN_KEY: ${ssm:/EMPIREDAO_SCAN_KEY~true}
+      SES_ACCESS_KEY_ID: ${ssm:/SES_ACCESS_KEY_ID~true}
+      SES_SECRET_ACCESS_KEY: ${ssm:/SES_SECRET_ACCESS_KEY~true}
+      SLACK_SECRET_KEY: ${ssm:/SLACK_SECRET_KEY~true}
+  typeform-data-offline:
+    handler: typeform-data/offline.data
+    timeout: 30
+    environment:
+      TYPEFORM_ID: ${ssm:/TYPEFORM_ID~true}
+      TYPEFORM_API_KEY: ${ssm:/TYPEFORM_API_KEY~true}
+    events:
+      - http:
+          path: /typeform/data/offline
+          method: post
+          cors: true
+  typeform-data-online:
+    handler: typeform-data/online.data
+    timeout: 30
+    environment:
+      TYPEFORM_ID: ${ssm:/TYPEFORM_ID~true}
+      TYPEFORM_API_KEY: ${ssm:/TYPEFORM_API_KEY~true}
+    events:
+      - http:
+          path: /typeform/data/online
+          method: get
+          cors: true
+
+custom:
+  domains:
+    main:
+      domainName: api.cardinal.so
+    dev:
+      domainName: dev-api.cardinal.so
+  customDomain:
+    rest:
+      domainName: ${self:custom.domains.${opt:stage}.domainName}
+      basePath: twitter
+      certificateName: "*.cardinal.com"
+      createRoute53Record: true
+  apiGatewayCaching:
+    enabled: true
+
+plugins:
+  - serverless-api-gateway-caching
+  - serverless-domain-manager
+  - serverless-plugin-typescript
+  - serverless-offline
+  - serverless-plugin-include-dependencies

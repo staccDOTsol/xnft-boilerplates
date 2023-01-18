@@ -1,0 +1,30 @@
+[package]
+name = "namespaces"
+version = "4.1.6"
+description = "Cardinal namespaces service"
+edition = "2021"
+homepage = "https://cardinal.so"
+repository = "https://github.com/cardinal-labs/cardinal-protocol/tree/main/programs/namespaces"
+authors = ["Jeremy Bogle <jeremy@cardinal.so>"]
+license = "AGPL-3.0"
+keywords = ["solana", "cardinal"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "namespaces"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.24.2", features = ["init-if-needed"] }
+anchor-spl = "0.24.2"
+spl-associated-token-account = "1.0.2"
+spl-token = { version = "3.1.1", features = ["no-entrypoint"] }
+cardinal-certificate = { version = "0.2.0", features = ["cpi"] }
+cardinal-token-manager = { version = "1.4.6", features = ["cpi"] }
+cardinal-time-invalidator = { version = "1.4.6", features = ["cpi"] }
+mpl-token-metadata = { version = "1.2.5", features = ["no-entrypoint"] }
