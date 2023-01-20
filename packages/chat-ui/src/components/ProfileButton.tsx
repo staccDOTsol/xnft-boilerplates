@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import { useEndpoint } from "@strata-foundation/react";
 import React, { FC, MouseEvent, useCallback, useEffect } from "react";

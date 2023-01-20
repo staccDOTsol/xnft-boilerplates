@@ -9,7 +9,7 @@ import {
   VStack
 } from "@chakra-ui/react";
 import { NATIVE_MINT } from "@solana/spl-token";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { ITokenWithMetaAndAccount } from "@strata-foundation/spl-token-collective";
 import { useSolOwnedAmount } from "../../hooks/bondingPricing";
 import { useErrorHandler } from "../../hooks/useErrorHandler";

@@ -1,5 +1,5 @@
 import * as anchor from "@project-serum/anchor";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { useConnection, useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import { useSolanaUnixTime } from "@strata-foundation/react";
 import BN from "bn.js";

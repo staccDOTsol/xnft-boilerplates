@@ -1,0 +1,1 @@
+{"version":3,"file":"useTokenRef.d.ts","sourceRoot":"","sources":["../../../../src/hooks/useTokenRef.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,iBAAiB,CAAC;AAC5C,OAAO,EAAE,SAAS,EAAE,MAAM,yCAAyC,CAAC;AACpE,OAAO,EAAE,eAAe,EAAc,MAAM,cAAc,CAAC;AAG3D,wBAAgB,WAAW,CACzB,QAAQ,EAAE,SAAS,GAAG,SAAS,GAAG,IAAI,GACrC,eAAe,CAAC,SAAS,CAAC,CAI5B"}

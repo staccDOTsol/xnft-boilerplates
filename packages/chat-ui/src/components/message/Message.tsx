@@ -13,7 +13,7 @@ import {
   useOutsideClick,
   Flex,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { MessageType } from "@strata-foundation/chat";
 import {
   useErrorHandler,

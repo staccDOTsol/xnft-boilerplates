@@ -19,7 +19,7 @@ import {
   Token,
   TOKEN_PROGRAM_ID,
 } from "@solana/spl-token";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import {

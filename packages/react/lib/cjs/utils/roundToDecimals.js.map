@@ -1,0 +1,1 @@
+{"version":3,"file":"roundToDecimals.js","sourceRoot":"","sources":["../../../src/utils/roundToDecimals.ts"],"names":[],"mappings":";;;AAAA,SAAgB,eAAe,CAAC,GAAW,EAAE,QAAgB;IAC3D,OAAO,IAAI,CAAC,KAAK,CAAC,GAAG,GAAG,IAAI,CAAC,GAAG,CAAC,EAAE,EAAE,QAAQ,CAAC,CAAC,GAAG,IAAI,CAAC,GAAG,CAAC,EAAE,EAAE,QAAQ,CAAC,CAAC;AAC3E,CAAC;AAFD,0CAEC"}

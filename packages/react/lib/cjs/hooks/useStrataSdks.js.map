@@ -1,0 +1,1 @@
+{"version":3,"file":"useStrataSdks.js","sourceRoot":"","sources":["../../../src/hooks/useStrataSdks.ts"],"names":[],"mappings":";;;;;;AAAA,kDAA0B;AAC1B,mEAGsC;AAEtC;;;GAGG;AACH,SAAgB,aAAa;IAC3B,MAAM,OAAO,GAAG,eAAK,CAAC,UAAU,CAAC,oCAAiB,CAAC,CAAC;IAEpD,IAAI,OAAO,KAAK,SAAS,EAAE;QACzB,MAAM,IAAI,KAAK,CAAC,0DAA0D,CAAC,CAAC;KAC7E;IAED,OAAO,OAAO,CAAC;AACjB,CAAC;AARD,sCAQC"}

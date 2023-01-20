@@ -6,7 +6,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { RiMenuAddLine } from "react-icons/ri";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useErrorHandler } from "@strata-foundation/react";
 import { CreateChatModal } from "./CreateChatModal";
 import { useLoadDelegate } from "../../hooks/useLoadDelegate";

@@ -22,8 +22,8 @@ const config = {
     ];
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@solana/wallet-adapter-react": path.resolve(
-        "../../node_modules/@solana/wallet-adapter-react"
+      "wallet-adapter-react-xnft": path.resolve(
+        "../../node_modules/wallet-adapter-react-xnft"
       ),
       "bn.js": path.resolve("../../node_modules/bn.js"),
       "@solana/web3.js": path.resolve("../../node_modules/@solana/web3.js"),
@@ -36,7 +36,7 @@ const config = {
     return [
       {
         source: "/",
-        destination: "/launchpad",
+        destination: "/swap/4Vyh36V9dYQdqUtxWc2nEzvezLjKn5qW5rPWACo8wddF",
         permanent: false,
       },
       {

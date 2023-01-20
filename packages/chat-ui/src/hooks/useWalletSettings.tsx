@@ -1,4 +1,4 @@
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useSettingsKey } from "./useSettingsKey";
 import { useSettings } from "./useSettings";
 

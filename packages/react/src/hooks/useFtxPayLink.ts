@@ -1,4 +1,4 @@
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 
 export function useFtxPayLink(): string {
   const { publicKey } = useWallet();

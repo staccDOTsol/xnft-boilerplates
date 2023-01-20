@@ -9,7 +9,7 @@ import {
   VStack,
   StackProps,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import {
   ITokenWithMetaAndAccount
 } from "@strata-foundation/spl-token-collective";

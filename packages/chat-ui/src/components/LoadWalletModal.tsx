@@ -17,7 +17,7 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useErrorHandler, useSolOwnedAmount } from "@strata-foundation/react";
 import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";

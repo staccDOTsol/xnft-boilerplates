@@ -1,5 +1,5 @@
 import { AnchorProvider } from "@project-serum/anchor";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { useConnection, useWallet } from "wallet-adapter-react-xnft";
 import { ConfirmOptions, sendAndConfirmRawTransaction, Signer, Transaction } from "@solana/web3.js";
 import React from "react";
 

@@ -14,7 +14,7 @@ import {
 import { yupResolver } from "@hookform/resolvers/yup";
 import { DataV2, Metadata } from "@metaplex-foundation/mpl-token-metadata";
 import { NATIVE_MINT } from "@solana/spl-token";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { Keypair, PublicKey, Signer, TransactionInstruction } from "@solana/web3.js";
 import {
   FIXED_CURVE_FEES,

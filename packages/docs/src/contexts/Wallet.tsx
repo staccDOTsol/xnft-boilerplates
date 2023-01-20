@@ -2,7 +2,7 @@ import React, { FC, useMemo } from "react";
 import {
   ConnectionProvider,
   WalletProvider,
-} from "@solana/wallet-adapter-react";
+} from "wallet-adapter-react-xnft";
 import { LedgerWalletAdapter } from "@solana/wallet-adapter-ledger";
 import { PhantomWalletAdapter } from "@solana/wallet-adapter-phantom";
 import { SolflareWalletAdapter } from "@solana/wallet-adapter-solflare";

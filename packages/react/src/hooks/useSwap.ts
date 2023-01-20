@@ -1,6 +1,6 @@
 import { useAsyncCallback } from "react-async-hook";
 import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useStrataSdks } from "./useStrataSdks";
 import { ISwapArgs, ITokenBonding, IPreInstructionArgs, IPostInstructionArgs } from "@strata-foundation/spl-token-bonding";
 import { InstructionResult } from "@strata-foundation/spl-utils";

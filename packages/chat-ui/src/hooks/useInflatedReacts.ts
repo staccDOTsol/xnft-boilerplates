@@ -1,4 +1,4 @@
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import { useAsync } from "react-async-hook";
 import { IMessageWithPending, IMessageWithPendingAndReacts } from "./useMessages";

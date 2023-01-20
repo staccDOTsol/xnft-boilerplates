@@ -9,7 +9,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import {
   roundToDecimals,

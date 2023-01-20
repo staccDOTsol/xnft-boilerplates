@@ -1,6 +1,6 @@
 import React from "react";
 import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey, Transaction } from "@solana/web3.js";
 import { useProvider, useAssociatedAccount } from "@strata-foundation/react";
 import { AsyncButton } from "./AsyncButton";

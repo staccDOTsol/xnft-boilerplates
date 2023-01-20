@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { PublicKey } from "@solana/web3.js";
 import { ITokenWithMetaAndAccount } from "@strata-foundation/spl-token-collective";
 import { useTokenList } from "./useTokenList";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { NATIVE_MINT } from "@solana/spl-token";
 import { SplTokenMetadata } from "@strata-foundation/spl-utils";
 import { useStrataSdks } from "./useStrataSdks";

@@ -1,7 +1,7 @@
 //@ts-ignore
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { useConnection, useWallet } from "wallet-adapter-react-xnft";
 import { useChatSdk } from "@strata-foundation/chat-ui";
 import {
   WalletModalProvider,

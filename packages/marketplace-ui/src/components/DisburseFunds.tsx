@@ -1,6 +1,6 @@
 import { Box, Button, FormLabel, Icon, VStack } from "@chakra-ui/react";
 import { serializeInstructionToBase64 } from "@solana/spl-governance";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import { MarketplaceSdk } from "@strata-foundation/marketplace-sdk";
 import {

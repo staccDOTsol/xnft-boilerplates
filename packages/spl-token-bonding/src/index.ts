@@ -128,6 +128,7 @@ export class ExponentialCurveConfig implements ICurveConfig, IPrimitiveCurve {
 
   toRawConfig(): CurveV0 {
     return {
+      // @ts-ignore
       definition: {
         timeV0: {
           curves: [
@@ -193,6 +194,7 @@ export class TimeDecayExponentialCurveConfig
 
   toRawConfig(): CurveV0 {
     return {
+      // @ts-ignore
       definition: {
         timeV0: {
           curves: [
@@ -242,6 +244,7 @@ export class TimeCurveConfig implements ICurveConfig {
 
   toRawConfig(): CurveV0 {
     return {
+      // @ts-ignore
       definition: {
         timeV0: {
           // @ts-ignore

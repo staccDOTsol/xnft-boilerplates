@@ -19,7 +19,7 @@ import {
   useTokenMetadata,
 } from "@strata-foundation/react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 
 type BuyMoreTrigger = React.FC<{
   onClick: () => void;

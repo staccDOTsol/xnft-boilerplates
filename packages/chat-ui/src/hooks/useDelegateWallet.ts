@@ -1,4 +1,4 @@
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { Keypair, PublicKey } from "@solana/web3.js";
 import { ISettings } from "@strata-foundation/chat";
 import { useLocalStorage } from "@strata-foundation/react";

@@ -1,0 +1,1 @@
+{"version":3,"file":"useCollective.js","sourceRoot":"","sources":["../../../src/hooks/useCollective.ts"],"names":[],"mappings":";;;AAEA,6CAA2D;AAC3D,mDAAgD;AAEhD,SAAgB,aAAa,CAC3B,UAAwC;IAExC,MAAM,EAAE,kBAAkB,EAAE,GAAG,IAAA,6BAAa,GAAE,CAAC;IAE/C,OAAO,IAAA,uBAAU,EAAC,UAAU,EAAE,kBAAkB,aAAlB,kBAAkB,uBAAlB,kBAAkB,CAAE,iBAAiB,EAAE,KAAK,CAAC,CAAC;AAC9E,CAAC;AAND,sCAMC"}

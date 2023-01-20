@@ -2,7 +2,7 @@ import React from "react";
 import { DisburseFunds } from "@strata-foundation/marketplace-ui";
 import { useVariables } from "../../theme/Root/variables";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import ReactShadow from "react-shadow/emotion";
 import { Box, CSSReset } from "@chakra-ui/react";
 

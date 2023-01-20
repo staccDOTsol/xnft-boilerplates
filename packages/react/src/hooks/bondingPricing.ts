@@ -1,5 +1,5 @@
 import { MintInfo, NATIVE_MINT, u64 } from "@solana/spl-token";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import {
   BondingPricing,

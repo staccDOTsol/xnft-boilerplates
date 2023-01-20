@@ -1,6 +1,6 @@
 import { Button, Icon } from "@chakra-ui/react";
 import { AnchorProvider } from "@project-serum/anchor";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import {
   useErrorHandler,

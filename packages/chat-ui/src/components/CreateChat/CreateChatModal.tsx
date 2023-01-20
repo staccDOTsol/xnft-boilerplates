@@ -11,7 +11,7 @@ import {
   Box,
   Button,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 import { useStrataSdks } from "@strata-foundation/react";

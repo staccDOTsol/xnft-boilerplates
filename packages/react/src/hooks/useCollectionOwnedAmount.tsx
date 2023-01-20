@@ -1,4 +1,4 @@
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import { ITokenWithMetaAndAccount } from "@strata-foundation/spl-token-collective";
 import { useMemo } from "react";

@@ -3,7 +3,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useEndpoint } from "@strata-foundation/react";
 import { u64 } from "@solana/spl-token";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import {
   WalletModalProvider,
   WalletMultiButton

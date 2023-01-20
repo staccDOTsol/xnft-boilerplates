@@ -13,7 +13,7 @@ import {
   ModalOverlay, ModalProps, Progress, Text, useDisclosure, VStack
 } from "@chakra-ui/react";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import {
   ChatSdk,
   IdentifierType,

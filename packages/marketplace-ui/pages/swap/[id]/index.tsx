@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { mintMetadataServerSideProps } from "../../../src/utils/tokenMetadataServerProps";
 import { SITE_URL } from "../../../src/constants";
+import { useWallet } from "wallet-adapter-react-xnft";
 
 export const getServerSideProps: GetServerSideProps =
   mintMetadataServerSideProps;
@@ -30,6 +31,7 @@ export const SwapDisplay: NextPage = ({
     tokenBonding, 
     loading,
   } = useTokenSwapFromId(id);
+  const { connected } = useWallet()
   return (
     <Box
       w="full"
@@ -46,9 +48,7 @@ export const SwapDisplay: NextPage = ({
       />
       <Box padding="54px" backgroundColor="black.500" />
       <Container mt="-72px" justifyContent="stretch" maxW="460px">
-        <Heading mb={2} color="white" fontSize="24px" fontWeight={600}>
-          Swap
-        </Heading>
+        
         <Box
           padding={4}
           zIndex={1}
@@ -57,6 +57,7 @@ export const SwapDisplay: NextPage = ({
           rounded="lg"
           minH="400px"
         >
+          {!connected }
           {loading && (
             <Center>
               <Spinner />

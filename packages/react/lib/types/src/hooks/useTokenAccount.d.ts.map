@@ -1,0 +1,1 @@
+{"version":3,"file":"useTokenAccount.d.ts","sourceRoot":"","sources":["../../../../src/hooks/useTokenAccount.ts"],"names":[],"mappings":"AAAA,OAAO,EAAc,eAAe,EAAE,MAAM,cAAc,CAAC;AAE3D,OAAO,EAAE,WAAW,IAAI,gBAAgB,EAAS,MAAM,mBAAmB,CAAC;AAC3E,OAAO,EAAe,SAAS,EAAE,MAAM,iBAAiB,CAAC;AASzD,wBAAgB,eAAe,CAC7B,OAAO,EAAE,SAAS,GAAG,SAAS,GAAG,IAAI,GACpC,eAAe,CAAC,gBAAgB,GAAG,SAAS,CAAC,CAE/C"}

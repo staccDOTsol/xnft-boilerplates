@@ -35,7 +35,7 @@ import {
   ITokenMintDecimalsFormProps,
   TokenMintDecimalsInputs,
 } from "./TokenMintDecimalsInputs";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 interface IManualForm extends IMetadataFormProps, ITokenMintDecimalsFormProps {

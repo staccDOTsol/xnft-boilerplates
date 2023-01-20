@@ -1,0 +1,1 @@
+{"version":3,"file":"useFtxPayLink.js","sourceRoot":"","sources":["../../../../src/hooks/useFtxPayLink.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,2BAA2B,CAAC;AAEtD,MAAM,UAAU,aAAa;IAC3B,MAAM,EAAE,SAAS,EAAE,GAAG,SAAS,EAAE,CAAC;IAElC,OAAO,gDAAgD,SAAS,EAAE,QAAQ,EAAE,6DAA6D,CAAC;AAC5I,CAAC"}

@@ -14,7 +14,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import {
   Notification,

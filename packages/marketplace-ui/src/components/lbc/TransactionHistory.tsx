@@ -32,7 +32,7 @@ import {
 import { useMemo } from "react";
 import moment from "moment";
 import { numberWithCommas } from "../../utils/numberWithCommas";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { BiRefresh } from "react-icons/bi";
 
 export const TransactionHistory = ({

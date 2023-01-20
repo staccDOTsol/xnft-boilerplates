@@ -1,0 +1,1 @@
+{"version":3,"file":"solPrice.d.ts","sourceRoot":"","sources":["../../../../src/contexts/solPrice.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,EAAE,EAAE,EAAE,SAAS,EAAiB,MAAM,OAAO,CAAC;AAK5D,MAAM,WAAW,sBAAsB;IACrC,QAAQ,EAAE,SAAS,CAAC;CACrB;AAED,eAAO,MAAM,eAAe,uBAA+C,CAAC;AAM5E,eAAO,MAAM,gBAAgB,EAAE,EAAE,CAAC,sBAAsB,CASvD,CAAC"}

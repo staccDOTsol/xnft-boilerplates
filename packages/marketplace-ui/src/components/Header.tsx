@@ -14,7 +14,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { useWallet } from "@solana/wallet-adapter-react";
+import { useWallet } from "wallet-adapter-react-xnft";
 import { TwitterLink } from "./TwitterLink";
 import { WalletModalButton } from "./WalletModalButton";
 import { route, routes } from "../utils/routes";

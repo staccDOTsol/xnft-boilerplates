@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import * as anchor from "@project-serum/anchor";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { useConnection, useWallet } from "wallet-adapter-react-xnft";
 import { PublicKey } from "@solana/web3.js";
 import {
   Notification,
